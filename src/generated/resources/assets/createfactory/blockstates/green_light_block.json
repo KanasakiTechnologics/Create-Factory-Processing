@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createfactory:block/green_light_block"
+    }
+  }
+}

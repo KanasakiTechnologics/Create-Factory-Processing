@@ -1,0 +1,6 @@
+// 1.21.1	2025-09-15T19:43:10.2212037	Tags for minecraft:block mod id createfactory
+c882f1fc924c7ace24f2ece6ec48f727ede793e9 data/createfactory/tags/block/colored_concrete.json
+b628d70e4fe477242d507bd905a0080bc3546047 data/createfactory/tags/block/colored_glass.json
+065645c3e0f7369fdb6fcc3adf0ba3a027897000 data/create/tags/block/wrench_pickup.json
+88e3c102ba868e06f51b439f0dfd59ae55f595b7 data/minecraft/tags/block/mineable/pickaxe.json
+88e3c102ba868e06f51b439f0dfd59ae55f595b7 data/minecraft/tags/block/needs_stone_tool.json

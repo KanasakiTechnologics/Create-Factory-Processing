@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createfactory:block/lime_light_block"
+    }
+  }
+}

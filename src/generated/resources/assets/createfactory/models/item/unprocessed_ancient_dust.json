@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "createfactory:item/unprocessed_ancient_dust"
+  }
+}

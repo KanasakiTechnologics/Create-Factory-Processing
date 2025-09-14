@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createfactory:compressed_coal"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "chance": 40.0,
+      "id": "createfactory:unpolished_diamond"
+    },
+    {
+      "chance": 60.0,
+      "id": "minecraft:coal"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createfactory:unprocessed_compressed_coal"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 500,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "createfactory:unprocessed_compressed_coal"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createfactory:unprocessed_compressed_coal"
+        }
+      ],
+      "results": [
+        {
+          "id": "createfactory:unprocessed_compressed_coal"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createfactory:unprocessed_compressed_coal"
+        }
+      ],
+      "results": [
+        {
+          "id": "createfactory:unprocessed_compressed_coal"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createfactory:unprocessed_compressed_coal"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createfactory:block/yellow_light_block"
+    }
+  }
+}

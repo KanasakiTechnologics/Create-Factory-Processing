@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createfactory:block/red_light_block"
+    }
+  }
+}
