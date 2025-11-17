@@ -4,6 +4,7 @@ import com.KanasakiTechnologics.CreateFactory.CreateFactory;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -19,8 +20,12 @@ public class FactoryBlocks {
 
     public static final DeferredBlock<Block> COMPRESSED_COAL = registerBlock("compressed_coal",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     public static final DeferredBlock<Block> UNPROCESSED_COMPRESSED_COAL = registerBlock("unprocessed_compressed_coal",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> ESSENCE_CROP = BLOCKS.register("essence_crop",
+            () -> new EssenceCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

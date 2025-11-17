@@ -1,13 +1,18 @@
 package com.KanasakiTechnologics.CreateFactory.datagen;
 
+import com.KanasakiTechnologics.CreateFactory.block.EssenceCropBlock;
 import com.KanasakiTechnologics.CreateFactory.block.FactoryBlocks;
 import com.KanasakiTechnologics.CreateFactory.block.LightBlocksGlasses;
+import com.KanasakiTechnologics.CreateFactory.item.AllFactoryItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 
 import java.util.Set;
 import java.util.stream.Stream;
@@ -54,6 +59,12 @@ public class FactoryLootTableProvider extends BlockLootSubProvider {
         dropSelf(LightBlocksGlasses.PINK_GLASS_LIGHT_BLOCK.get());
         dropSelf(FactoryBlocks.COMPRESSED_COAL.get());
         dropSelf(FactoryBlocks.UNPROCESSED_COMPRESSED_COAL.get());
+
+        LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(FactoryBlocks.ESSENCE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(EssenceCropBlock.AGE, 3));
+
+        this.add(FactoryBlocks.ESSENCE_CROP.get(), this.createCropDrops(FactoryBlocks.ESSENCE_CROP.get(),
+                AllFactoryItems.DYE_ESSENCE.get(), AllFactoryItems.ESSENCE_SEED.get(), lootItemConditionBuilder));
 
     }
 

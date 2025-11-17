@@ -34,11 +34,16 @@
   "block.createfactory.green_light_block": "Green Light Block",
   "block.createfactory.red_light_block": "Red Light Block",
   "block.createfactory.black_light_block": "Black Light Block",
+  "block.createfactory.essence_crop": "Black Light Block",
 
   "block.createfactory.unprocessed_compressed_coal": "Unprocessed Compressed Block",
   "block.createfactory.compressed_coal": "Compressed Block Block",
 
   "item.createfactory.ancient_dust": "Ancient Dust",
-  "item.createfactory.unpolished_diamond": "Unpolished Diamond"
+  "item.createfactory.unpolished_diamond": "Unpolished Diamond",
+  "item.createfactory.ender_pearl_shard": "Ender Pearl Shard",
+
+  "item.createfactory.essence_seed": "Essence Seed",
+  "item.createfactory.dye_essence": "Dye Essence"
 
 }

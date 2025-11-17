@@ -5,6 +5,7 @@ import com.KanasakiTechnologics.CreateFactory.block.LightBlocksGlasses;
 import com.KanasakiTechnologics.CreateFactory.content.FactoryCreativeTab;
 import com.KanasakiTechnologics.CreateFactory.content.FactoryTags;
 import com.KanasakiTechnologics.CreateFactory.item.AllFactoryItems;
+import com.KanasakiTechnologics.CreateFactory.loot.FactoryLootModifiers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
@@ -42,7 +43,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
+@SuppressWarnings("removal")
 @Mod(CreateFactory.MOD_ID)
 public class CreateFactory{
 
@@ -55,6 +56,7 @@ public class CreateFactory{
 
         FactoryTags.init();
         FactoryBlocks.register(modEventBus);
+        FactoryLootModifiers.register(modEventBus);
         AllFactoryItems.register(modEventBus);
         LightBlocksGlasses.register(modEventBus);
         FactoryCreativeTab.register(modEventBus);

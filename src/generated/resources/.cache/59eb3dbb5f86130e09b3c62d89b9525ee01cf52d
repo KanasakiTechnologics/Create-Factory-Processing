@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-15T19:43:10.219206	Loot Tables
+// 1.21.1	2025-11-18T17:57:30.7063286	Loot Tables
 7810b299b5e72259019d7d4e2ee86626e7468576 data/createfactory/loot_table/blocks/black_glass_light_block.json
 57fcefd312098ee45fddd99a63f0fd24b51dc2a4 data/createfactory/loot_table/blocks/black_light_block.json
 a12672f045654a73fcb80c679052e77473a14576 data/createfactory/loot_table/blocks/blue_glass_light_block.json
@@ -8,6 +8,7 @@ a12672f045654a73fcb80c679052e77473a14576 data/createfactory/loot_table/blocks/bl
 993930707dd417a26dab1e43cce48df63bb7f4d7 data/createfactory/loot_table/blocks/compressed_coal.json
 b780998e345f96afb9aa655762cc6118f0c62e3d data/createfactory/loot_table/blocks/cyan_glass_light_block.json
 2f6c70ff62b767ef9e4a057612e34a00f7f02a8a data/createfactory/loot_table/blocks/cyan_light_block.json
+45586d1becf0ce9493a92ede6e31b4d130d01848 data/createfactory/loot_table/blocks/essence_crop.json
 c4dc5f2c202c4e9076557df7a02c2052b73c875d data/createfactory/loot_table/blocks/gray_glass_light_block.json
 fd7bf396618c9d1017ec6203375c4b42c00d978c data/createfactory/loot_table/blocks/gray_light_block.json
 34da4f55b711356e532f09ee12df5580bcca0738 data/createfactory/loot_table/blocks/green_glass_light_block.json

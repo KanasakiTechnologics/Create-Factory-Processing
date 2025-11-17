@@ -2,10 +2,7 @@ package com.KanasakiTechnologics.CreateFactory.datagen;
 
 
 import com.KanasakiTechnologics.CreateFactory.CreateFactory;
-import com.KanasakiTechnologics.CreateFactory.datagen.create.FactoryCompactingProvider;
-import com.KanasakiTechnologics.CreateFactory.datagen.create.FactoryMixingProvider;
-import com.KanasakiTechnologics.CreateFactory.datagen.create.FactoryPolishingProvider;
-import com.KanasakiTechnologics.CreateFactory.datagen.create.FactorySequenceAssemblyProvider;
+import com.KanasakiTechnologics.CreateFactory.datagen.create.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -21,6 +18,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("removal")
 @EventBusSubscriber(modid = CreateFactory.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     @SubscribeEvent
@@ -36,8 +34,13 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new FactoryPolishingProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new FactorySequenceAssemblyProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new FactoryMixingProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new FactoryCrushingProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new FactoryMillingProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new FactoryHauntingProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new FactoryCompactingProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new FactoryDataMapProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(FactoryLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+        generator.addProvider(event.includeServer(), new FactoryGlobalLootModifierProvider(packOutput,lookupProvider));
         BlockTagsProvider blockTagsProvider = new FactoryBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
     }

@@ -62,7 +62,8 @@ public class FactoryCreativeTab {
                         output.accept(AllFactoryItems.ANCIENT_DUST);
                         output.accept(AllFactoryItems.UNPOLISHED_DIAMOND);
                         output.accept(FactoryBlocks.COMPRESSED_COAL);
-
+                        output.accept(AllFactoryItems.ESSENCE_SEED);
+                        output.accept(AllFactoryItems.DYE_ESSENCE);
                     }).build());
 
     public static void register(IEventBus eventBus){CREATIVE_MOD_TAB.register(eventBus);}

@@ -1,6 +1,7 @@
 package com.KanasakiTechnologics.CreateFactory.datagen;
 
 import com.KanasakiTechnologics.CreateFactory.block.LightBlocksGlasses;
+import com.KanasakiTechnologics.CreateFactory.item.AllFactoryItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -9,9 +10,12 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -57,6 +61,50 @@ public class FactoryRecipeProvider extends RecipeProvider implements IConditionB
         glassLight(recipeOutput, Items.PURPLE_STAINED_GLASS, LightBlocksGlasses.PURPLE_GLASS_LIGHT_BLOCK.get());
         glassLight(recipeOutput, Items.MAGENTA_STAINED_GLASS, LightBlocksGlasses.MAGENTA_GLASS_LIGHT_BLOCK.get());
         glassLight(recipeOutput, Items.PINK_STAINED_GLASS, LightBlocksGlasses.PINK_GLASS_LIGHT_BLOCK.get());
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,Items.SKELETON_SKULL)
+                .define('S',Items.AMETHYST_SHARD)
+                .define('B', Blocks.BONE_BLOCK)
+                .define('M',Items.BONE_MEAL)
+                .pattern("BMB")
+                .pattern("MSM")
+                .pattern("BMB")
+                .unlockedBy("has_bone_meal",has(Items.BONE_MEAL))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,Items.ENDER_PEARL)
+                .define('E', AllFactoryItems.ENDER_PEARL_SHARD)
+                .pattern("EEE")
+                .pattern("E E")
+                .pattern("EEE")
+                .unlockedBy("has_ender_shard",has(AllFactoryItems.ENDER_PEARL_SHARD)).save(recipeOutput,"minecraft:ender_pearl_shard");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,Items.ENDER_EYE)
+                .define('E', AllFactoryItems.ENDER_PEARL_SHARD)
+                .define('B', Items.BLAZE_POWDER)
+                .pattern("EEE")
+                .pattern("EBE")
+                .pattern("EEE")
+                .unlockedBy("has_ender_shard",has(AllFactoryItems.ENDER_PEARL_SHARD)).save(recipeOutput,"minecraft:ender_eye_shard");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,Blocks.CHEST,4)
+                .define('L', ItemTags.LOGS)
+                .pattern("LLL")
+                .pattern("L L")
+                .pattern("LLL")
+                .unlockedBy("has_logs",has(ItemTags.LOGS)).save(recipeOutput,"minecraft:chest_from_logs");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,Items.STICK,16)
+                .define('L', ItemTags.LOGS)
+                .pattern("L")
+                .pattern("L")
+                .unlockedBy("has_logs",has(ItemTags.LOGS)).save(recipeOutput,"minecraft:stick_from_logs");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,Items.STRING)
+                .define('L', ItemTags.LEAVES)
+                .pattern("LLL")
+                .unlockedBy("has_leaves",has(ItemTags.LEAVES)).save(recipeOutput,"minecraft:string_from_leaves");
+
     }
 
     private static void concreteLight(RecipeOutput out, Item concrete, Block result) {

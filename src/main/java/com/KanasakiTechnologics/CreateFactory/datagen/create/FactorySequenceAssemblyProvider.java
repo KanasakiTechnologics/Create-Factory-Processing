@@ -23,7 +23,7 @@ public class FactorySequenceAssemblyProvider extends SequencedAssemblyRecipeGen 
 
     GeneratedRecipe NETHERITE_SCRAP = create("netherite_scrap",b -> b.require(AllFactoryItems.ANCIENT_DUST)
             .transitionTo(AllFactoryItems.UNPROCESSED_ANCIENT_DUST)
-            .addOutput(Items.NETHERITE_SCRAP,40)
+            .addOutput(Items.NETHERITE_SCRAP,60)
             .addOutput(AllItems.POWDERED_OBSIDIAN,50)
             .addOutput(AllItems.CINDER_FLOUR,50)
             .loops(5)
