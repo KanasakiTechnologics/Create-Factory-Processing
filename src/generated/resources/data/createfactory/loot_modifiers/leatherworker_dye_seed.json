@@ -1,0 +1,14 @@
+{
+  "type": "createfactory:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_tannery"
+    },
+    {
+      "chance": 0.45,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "createfactory:essence_seed"
+}

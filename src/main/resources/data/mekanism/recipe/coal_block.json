@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "mekanism:block_charcoal"
+    },
+    {
+      "item": "mekanism:block_charcoal"
+    },
+    {
+      "item": "mekanism:block_charcoal"
+    },
+    {
+      "item": "mekanism:block_charcoal"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:coal_block"
+    }
+  ]
+}
+

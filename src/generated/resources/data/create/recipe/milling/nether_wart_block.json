@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_wart_block"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "count": 2,
+      "id": "minecraft:nether_wart"
+    },
+    {
+      "chance": 0.25,
+      "id": "minecraft:nether_wart"
+    }
+  ]
+}

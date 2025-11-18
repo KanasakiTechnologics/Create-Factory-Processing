@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bone_block"
+    },
+    "M": {
+      "item": "minecraft:bone_meal"
+    },
+    "S": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "BMB",
+    "MSM",
+    "BMB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:skeleton_skull"
+  }
+}

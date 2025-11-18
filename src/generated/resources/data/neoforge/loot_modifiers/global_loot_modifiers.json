@@ -1,0 +1,8 @@
+{
+  "entries": [
+    "createfactory:sniffing_dye_seed",
+    "createfactory:leatherworker_dye_seed",
+    "createfactory:sheep_dye_seed"
+  ],
+  "replace": false
+}

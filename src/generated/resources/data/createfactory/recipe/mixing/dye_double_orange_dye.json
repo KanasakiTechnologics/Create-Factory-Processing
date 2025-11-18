@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createfactory:dye_essence"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "minecraft:orange_dye"
+    }
+  ]
+}

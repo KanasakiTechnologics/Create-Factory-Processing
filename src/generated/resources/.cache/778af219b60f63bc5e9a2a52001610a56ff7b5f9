@@ -1,0 +1,5 @@
+// 1.21.1	2025-11-18T18:15:16.4639269	Global Loot Modifiers : createfactory
+391533f6e2a6d15f7dbd02beb1c6895ad963fc76 data/createfactory/loot_modifiers/leatherworker_dye_seed.json
+b3a3c645b26984db31790ce3b9473c69febd1e82 data/createfactory/loot_modifiers/sheep_dye_seed.json
+888bf85d84c3ef0161ce025ee085b6825175b9d1 data/createfactory/loot_modifiers/sniffing_dye_seed.json
+22f7517ff4aebba2a5652bf0847e8c17f8b892c2 data/neoforge/loot_modifiers/global_loot_modifiers.json
