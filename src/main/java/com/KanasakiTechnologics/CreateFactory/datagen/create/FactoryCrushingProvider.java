@@ -38,6 +38,10 @@ public class FactoryCrushingProvider extends CrushingRecipeGen {
                 .output(.25F,Items.NETHER_WART)
         ),
 
+        EXP_NUGGET = create(() -> Items.FLINT,b -> b.duration(150)
+                .output(.20f,AllItems.EXP_NUGGET)
+        ),
+
         QUARTZ = create(() -> Items.QUARTZ, b -> b.duration(100)
                 .output(.25f,AllItems.EXP_NUGGET)
         );

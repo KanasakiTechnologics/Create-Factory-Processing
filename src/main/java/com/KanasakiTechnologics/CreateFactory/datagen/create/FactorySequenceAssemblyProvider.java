@@ -10,6 +10,7 @@ import com.simibubi.create.content.kinetics.press.PressingRecipe;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluids;
 import plus.dragons.createenchantmentindustry.common.registry.CEIFluids;
 
@@ -27,7 +28,7 @@ public class FactorySequenceAssemblyProvider extends SequencedAssemblyRecipeGen 
             .addOutput(AllItems.POWDERED_OBSIDIAN,50)
             .addOutput(AllItems.CINDER_FLOUR,50)
             .loops(5)
-            .addStep(FillingRecipe::new, rb -> rb.require(CEIFluids.EXPERIENCE.get(),250))
+            .addStep(FillingRecipe::new,rb -> rb.require(CEIFluids.EXPERIENCE.get(),250))
             .addStep(FillingRecipe::new,rb ->rb.require(Fluids.LAVA,250))
             .addStep(PressingRecipe::new, rb -> rb)
     );
