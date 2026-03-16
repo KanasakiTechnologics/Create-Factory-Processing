@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:stone"
+    },
+    "L": {
+      "item": "createfactory:diamond_bits"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LDL",
+    "LLL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_ore"
+  }
+}

@@ -34,6 +34,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new FactoryPolishingProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new FactorySequenceAssemblyProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new FactoryMixingProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new FactorySplashingProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new FactoryCrushingProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new FactoryMillingProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new FactoryHauntingProvider(packOutput,lookupProvider));

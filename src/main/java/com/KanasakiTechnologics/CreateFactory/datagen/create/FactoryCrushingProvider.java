@@ -23,6 +23,11 @@ public class FactoryCrushingProvider extends CrushingRecipeGen {
                 .output(.05f,Items.NETHERITE_SCRAP)
         ),
 
+        COAL_DIAMOND = create(() -> Blocks.COAL_BLOCK, b -> b.duration(200)
+                .output(.05f,AllFactoryItems.DIAMOND_BITS)
+                .output(Items.COAL,4)
+        ),
+
         ECHO_SHARD = create(() -> Items.ECHO_SHARD, b -> b.duration(100)
                 .output(AllFactoryItems.ENDER_PEARL_SHARD,2)
                 .output(.25f,AllFactoryItems.ENDER_PEARL_SHARD)

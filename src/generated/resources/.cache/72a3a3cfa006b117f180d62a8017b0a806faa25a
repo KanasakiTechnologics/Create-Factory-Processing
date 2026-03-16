@@ -1,5 +1,6 @@
-// 1.21.1	2026-03-11T11:15:09.9854443	createfactory's processing recipes: crushing
+// 1.21.1	2026-03-16T14:50:15.7937149	createfactory's processing recipes: crushing
 92b918855704e33e15a231f7dd202088bb26b64a data/create/recipe/crushing/basalt.json
+9b2378e221e628ce2e74c3745c5cc70f541a6546 data/create/recipe/crushing/coal_block.json
 9b89ebc6722312882397fe250b52f61a613c52a8 data/create/recipe/crushing/echo_shard.json
 e9be19ef380987cfe6ef398249a83ee43e4b2758 data/create/recipe/crushing/flint.json
 c3c5fdadd3199ee8a34fe68a706b3f6855dfcc0f data/create/recipe/crushing/nether_wart_block.json

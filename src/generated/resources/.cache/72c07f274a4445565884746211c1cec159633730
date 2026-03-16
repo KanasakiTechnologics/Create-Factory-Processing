@@ -1,5 +1,7 @@
-// 1.21.1	2025-11-18T17:57:30.7053265	Item Models: createfactory
+// 1.21.1	2026-03-16T15:07:48.4063558	Item Models: createfactory
 c23ceab8c91822e03cdd8f504ac514733dca3fe0 assets/createfactory/models/item/ancient_dust.json
+73ede130983941847352f5fa64380169fb14a22a assets/createfactory/models/item/crushed_brass.json
+008c83d0be976dbbbd28c11f9c5727b767eb337c assets/createfactory/models/item/diamond_bits.json
 df47e7677c9ce5ae38ca9cf4bface215e1e05244 assets/createfactory/models/item/dye_essence.json
 04a15ff0c1ea04b40ae57a4189bc0f37a8b87f36 assets/createfactory/models/item/ender_pearl_shard.json
 f8bf57b3ad116d549e6865500df96f89e3adb445 assets/createfactory/models/item/essence_seed.json

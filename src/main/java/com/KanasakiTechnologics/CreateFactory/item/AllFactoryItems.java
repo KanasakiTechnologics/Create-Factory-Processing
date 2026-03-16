@@ -29,5 +29,11 @@ public class AllFactoryItems {
     public static final DeferredItem<Item> DYE_ESSENCE = ITEMS.register("dye_essence",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> DIAMOND_BITS = ITEMS.register("diamond_bits",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CRUSHED_BRASS = ITEMS.register("crushed_brass",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){ITEMS.register(eventBus);}
 }

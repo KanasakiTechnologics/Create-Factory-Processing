@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crushed_brass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "createfactory:crushed_brass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:brass_ingot_from_blasting_crushed_brass"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crushed_brass"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:brass_ingot_from_blasting_crushed_brass"
+    ]
+  }
+}

@@ -60,7 +60,9 @@ public class FactoryCreativeTab {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(AllFactoryItems.ANCIENT_DUST.get()))
                     .title(Component.translatable("creativetab.createfactory.create_factory_processing"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(AllFactoryItems.CRUSHED_BRASS);
                         output.accept(AllFactoryItems.ANCIENT_DUST);
+                        output.accept(AllFactoryItems.DIAMOND_BITS);
                         output.accept(AllFactoryItems.UNPOLISHED_DIAMOND);
                         output.accept(FactoryBlocks.COMPRESSED_COAL);
                         output.accept(AllFactoryItems.ESSENCE_SEED);

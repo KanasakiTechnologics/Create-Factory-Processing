@@ -2,6 +2,7 @@ package com.KanasakiTechnologics.CreateFactory.datagen;
 
 import com.KanasakiTechnologics.CreateFactory.block.LightBlocksGlasses;
 import com.KanasakiTechnologics.CreateFactory.item.AllFactoryItems;
+import com.simibubi.create.AllItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -14,10 +15,16 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.BlastingRecipe;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.SmeltingRecipe;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 import static com.KanasakiTechnologics.CreateFactory.CreateFactory.MOD_ID;
@@ -26,6 +33,8 @@ public class FactoryRecipeProvider extends RecipeProvider implements IConditionB
     public FactoryRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
     }
+
+    List<ItemLike> BRASS_CRUSHED = List.of(AllFactoryItems.CRUSHED_BRASS);
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
@@ -95,6 +104,14 @@ public class FactoryRecipeProvider extends RecipeProvider implements IConditionB
                 .pattern("LLL")
                 .unlockedBy("has_logs",has(ItemTags.LOGS)).save(recipeOutput,"minecraft:chest_from_logs");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,Blocks.DIAMOND_ORE,1)
+                .define('L', AllFactoryItems.DIAMOND_BITS)
+                .define('D', Blocks.STONE)
+                .pattern("LLL")
+                .pattern("LDL")
+                .pattern("LLL")
+                .unlockedBy("has_diamond_bits",has(AllFactoryItems.DIAMOND_BITS)).save(recipeOutput,"minecraft:hardest_diamond");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,Items.STICK,16)
                 .define('L', ItemTags.LOGS)
                 .pattern("L")
@@ -106,6 +123,17 @@ public class FactoryRecipeProvider extends RecipeProvider implements IConditionB
                 .pattern("LLL")
                 .unlockedBy("has_leaves",has(ItemTags.LEAVES)).save(recipeOutput,"minecraft:string_from_leaves");
 
+        oreSmelting(recipeOutput,BRASS_CRUSHED,RecipeCategory.MISC, AllItems.BRASS_INGOT.get(),0.25f,100,"rubber");
+        oreBlasting(recipeOutput,BRASS_CRUSHED,RecipeCategory.MISC,AllItems.BRASS_INGOT.get(),0.50f,100,"tin");
+
+    }
+
+    protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
+        oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
+    }
+
+    protected static void oreBlasting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
+        oreCooking(recipeOutput, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
     }
 
     private static void concreteLight(RecipeOutput out, Item concrete, Block result) {

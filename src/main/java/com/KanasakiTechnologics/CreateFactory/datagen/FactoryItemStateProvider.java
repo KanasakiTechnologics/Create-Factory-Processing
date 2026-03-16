@@ -19,6 +19,8 @@ public class FactoryItemStateProvider extends ItemModelProvider {
         basicItem(AllFactoryItems.ENDER_PEARL_SHARD.get());
         basicItem(AllFactoryItems.ESSENCE_SEED.get());
         basicItem(AllFactoryItems.DYE_ESSENCE.get());
+        basicItem(AllFactoryItems.DIAMOND_BITS.get());
+        basicItem(AllFactoryItems.CRUSHED_BRASS.get());
 
     }
 }

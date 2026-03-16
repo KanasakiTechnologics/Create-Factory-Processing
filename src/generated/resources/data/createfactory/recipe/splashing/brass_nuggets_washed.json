@@ -1,0 +1,18 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createfactory:crushed_brass"
+    }
+  ],
+  "results": [
+    {
+      "count": 9,
+      "id": "create:brass_nugget"
+    },
+    {
+      "chance": 0.25,
+      "id": "minecraft:glowstone_dust"
+    }
+  ]
+}

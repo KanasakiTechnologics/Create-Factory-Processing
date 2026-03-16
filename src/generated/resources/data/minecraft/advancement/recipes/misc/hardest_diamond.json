@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diamond_bits": {
+      "conditions": {
+        "items": [
+          {
+            "items": "createfactory:diamond_bits"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:hardest_diamond"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_diamond_bits"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:hardest_diamond"
+    ]
+  }
+}
