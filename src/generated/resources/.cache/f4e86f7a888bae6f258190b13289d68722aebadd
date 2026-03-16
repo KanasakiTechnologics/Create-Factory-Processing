@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-18T18:36:38.5167645	createfactory's processing recipes: mixing
+// 1.21.1	2026-07-29T14:41:39.438714	createfactory's processing recipes: mixing
 01b61a386b15f3fd6c10cc347577c5b4f67ff935 data/createfactory/recipe/mixing/amethyst_block.json
 f7ae456b59a1d9d07b5636dd92b4b1490036c9c8 data/createfactory/recipe/mixing/ancient_dust.json
 1ed02dd39d9c0a8a82b29abfa06c1351035136df data/createfactory/recipe/mixing/dye_double_black_dye.json
@@ -19,3 +19,4 @@ eee6692bd9f9389a81c92ca949efe4b6c1e08521 data/createfactory/recipe/mixing/dye_do
 02e6f0e1b99226a96cc320a862858301245045a2 data/createfactory/recipe/mixing/dye_double_yellow_dye.json
 f39127b4fb05f1606bb060c21a8981387e829906 data/createfactory/recipe/mixing/echo_shard.json
 d6ea3ab05add71b50500801bccaf991157b34179 data/createfactory/recipe/mixing/netherrack.json
+c370193e6744f5aa868e1e87d6dc3c59d5589ae8 data/createfactory/recipe/mixing/skeleton_skull.json

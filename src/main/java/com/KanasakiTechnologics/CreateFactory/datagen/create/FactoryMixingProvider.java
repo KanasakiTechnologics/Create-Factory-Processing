@@ -33,6 +33,7 @@ public class FactoryMixingProvider extends MixingRecipeGen {
     }
 
     GeneratedRecipe
+            SKELETON_SKULL = create("skeleton_skull",b -> b.require(Items.AMETHYST_SHARD).require(Items.BONE_MEAL).require(Items.BONE_MEAL).require(Items.BONE_MEAL).require(Items.BONE_MEAL).require(Blocks.BONE_BLOCK).require(Blocks.BONE_BLOCK).require(Blocks.BONE_BLOCK).require(Blocks.BONE_BLOCK).output(Items.SKELETON_SKULL)),
             ANCIENT_DUST = create("ancient_dust",b -> b.requiresHeat(HeatCondition.SUPERHEATED).require(AllItems.POWDERED_OBSIDIAN).require(AllItems.CINDER_FLOUR).output(AllFactoryItems.ANCIENT_DUST)),
             AMETHYST_BLOCK = create("amethyst_block", b -> b.require(Items.AMETHYST_SHARD).require(Items.AMETHYST_SHARD).require(Items.AMETHYST_SHARD).require(Fluids.WATER,500).output(Blocks.AMETHYST_BLOCK)),
             ECHO_SHARD = create("echo_shard", b -> b.requiresHeat(HeatCondition.HEATED).require(Items.AMETHYST_SHARD).require(Blocks.SCULK_CATALYST).output(Items.ECHO_SHARD).output(Blocks.SCULK_CATALYST)),

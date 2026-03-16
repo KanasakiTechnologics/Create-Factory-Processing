@@ -15,6 +15,7 @@ public class FactoryHauntingProvider extends HauntingRecipeGen {
     }
 
     GeneratedRecipe
+            WITHER_SKELETON_SKULL = convert(Items.SKELETON_SKULL,Items.WITHER_SKELETON_SKULL),
             BROWN_MUSHROOM = convert(Items.RED_MUSHROOM,Items.BROWN_MUSHROOM),
             RED_MUSHROOM = convert(Items.BROWN_MUSHROOM,Items.RED_MUSHROOM),
             SPIDER_EYE = create("redstone_eye", b->b.require(Items.REDSTONE)
