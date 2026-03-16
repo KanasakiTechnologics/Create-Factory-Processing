@@ -37,6 +37,7 @@ public class FactoryCreativeTab {
                         output.accept(LightBlocksGlasses.PURPLE_LIGHT_BLOCK);
                         output.accept(LightBlocksGlasses.MAGENTA_LIGHT_BLOCK);
                         output.accept(LightBlocksGlasses.PINK_LIGHT_BLOCK);
+                        output.accept(LightBlocksGlasses.CLEAR_GLASS_LIGHT_BLOCK);
                         output.accept(LightBlocksGlasses.WHITE_GLASS_LIGHT_BLOCK);
                         output.accept(LightBlocksGlasses.LIGHT_GRAY_GLASS_LIGHT_BLOCK);
                         output.accept(LightBlocksGlasses.GRAY_GLASS_LIGHT_BLOCK);

@@ -1,9 +1,0 @@
-{
-  "parent": "block/liquid",
-  "textures": {
-    "particle": "createfactory:block/sap_still",
-    "flow": "createfactory:block/sap_flow",
-    "still": "createfactory:block/sap_still"
-  }
-}
-

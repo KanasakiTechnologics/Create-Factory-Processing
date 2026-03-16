@@ -1,9 +1,0 @@
-{
-  "parent": "block/liquid",
-  "textures": {
-    "particle": "createfactory:block/soul_lava_still",
-    "flow": "createfactory:block/soul_lava_flow",
-    "still": "createfactory:block/soul_lava_still"
-  }
-}
-

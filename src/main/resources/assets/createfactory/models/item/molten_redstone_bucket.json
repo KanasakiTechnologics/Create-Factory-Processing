@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "createfactory:item/molten_redstone_bucket"
-  }
-}

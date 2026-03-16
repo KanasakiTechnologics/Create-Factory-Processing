@@ -41,6 +41,7 @@ public class FactoryLootTableProvider extends BlockLootSubProvider {
         dropSelf(LightBlocksGlasses.MAGENTA_LIGHT_BLOCK.get());
         dropSelf(LightBlocksGlasses.PINK_LIGHT_BLOCK.get());
 
+        dropSelf(LightBlocksGlasses.CLEAR_GLASS_LIGHT_BLOCK.get());
         dropSelf(LightBlocksGlasses.WHITE_GLASS_LIGHT_BLOCK.get());
         dropSelf(LightBlocksGlasses.LIGHT_GRAY_GLASS_LIGHT_BLOCK.get());
         dropSelf(LightBlocksGlasses.GRAY_GLASS_LIGHT_BLOCK.get());

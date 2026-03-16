@@ -54,37 +54,39 @@ public class LightBlocksGlasses {
             () -> new Block(BlockBehaviour.Properties.of().mapColor(DyeColor.PINK).lightLevel(p_50872 ->15).strength(1.8f)));
 
     //Light Glass Block
-    public static final DeferredBlock<Block> WHITE_GLASS_LIGHT_BLOCK = registerBlock("white_glass_light_block",
+    public static final DeferredBlock<Block> WHITE_GLASS_LIGHT_BLOCK = registerBlock("white_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.WHITE).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> LIGHT_GRAY_GLASS_LIGHT_BLOCK = registerBlock("light_gray_glass_light_block",
+    public static final DeferredBlock<Block> CLEAR_GLASS_LIGHT_BLOCK = registerBlock("clear_light_glass",
+            () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel(p_50872 ->15)));
+    public static final DeferredBlock<Block> LIGHT_GRAY_GLASS_LIGHT_BLOCK = registerBlock("light_gray_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.LIGHT_GRAY).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> GRAY_GLASS_LIGHT_BLOCK = registerBlock("gray_glass_light_block",
+    public static final DeferredBlock<Block> GRAY_GLASS_LIGHT_BLOCK = registerBlock("gray_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.GRAY).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> BLACK_GLASS_LIGHT_BLOCK = registerBlock("black_glass_light_block",
+    public static final DeferredBlock<Block> BLACK_GLASS_LIGHT_BLOCK = registerBlock("black_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.BLACK).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> BROWN_GLASS_LIGHT_BLOCK = registerBlock("brown_glass_light_block",
+    public static final DeferredBlock<Block> BROWN_GLASS_LIGHT_BLOCK = registerBlock("brown_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.BROWN).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> RED_GLASS_LIGHT_BLOCK = registerBlock("red_glass_light_block",
+    public static final DeferredBlock<Block> RED_GLASS_LIGHT_BLOCK = registerBlock("red_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.RED).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> ORANGE_GLASS_LIGHT_BLOCK = registerBlock("orange_glass_light_block",
+    public static final DeferredBlock<Block> ORANGE_GLASS_LIGHT_BLOCK = registerBlock("orange_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.ORANGE).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> YELLOW_GLASS_LIGHT_BLOCK = registerBlock("yellow_glass_light_block",
+    public static final DeferredBlock<Block> YELLOW_GLASS_LIGHT_BLOCK = registerBlock("yellow_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.YELLOW).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> LIME_GLASS_LIGHT_BLOCK = registerBlock("lime_glass_light_block",
+    public static final DeferredBlock<Block> LIME_GLASS_LIGHT_BLOCK = registerBlock("lime_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.LIME).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> GREEN_GLASS_LIGHT_BLOCK = registerBlock("green_glass_light_block",
+    public static final DeferredBlock<Block> GREEN_GLASS_LIGHT_BLOCK = registerBlock("green_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.GREEN).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> CYAN_GLASS_LIGHT_BLOCK = registerBlock("cyan_glass_light_block",
+    public static final DeferredBlock<Block> CYAN_GLASS_LIGHT_BLOCK = registerBlock("cyan_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.CYAN).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> LIGHT_BLUE_GLASS_LIGHT_BLOCK = registerBlock("light_blue_glass_light_block",
+    public static final DeferredBlock<Block> LIGHT_BLUE_GLASS_LIGHT_BLOCK = registerBlock("light_blue_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.LIGHT_BLUE).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> BLUE_GLASS_LIGHT_BLOCK = registerBlock("blue_glass_light_block",
+    public static final DeferredBlock<Block> BLUE_GLASS_LIGHT_BLOCK = registerBlock("blue_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.BLUE).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> PURPLE_GLASS_LIGHT_BLOCK = registerBlock("purple_glass_light_block",
+    public static final DeferredBlock<Block> PURPLE_GLASS_LIGHT_BLOCK = registerBlock("purple_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.PURPLE).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> MAGENTA_GLASS_LIGHT_BLOCK = registerBlock("magenta_glass_light_block",
+    public static final DeferredBlock<Block> MAGENTA_GLASS_LIGHT_BLOCK = registerBlock("magenta_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.MAGENTA).lightLevel(p_50872 ->15)));
-    public static final DeferredBlock<Block> PINK_GLASS_LIGHT_BLOCK = registerBlock("pink_glass_light_block",
+    public static final DeferredBlock<Block> PINK_GLASS_LIGHT_BLOCK = registerBlock("pink_light_glass",
             () -> new ConnectedGlassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(DyeColor.PINK).lightLevel(p_50872 ->15)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

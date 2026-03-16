@@ -46,6 +46,7 @@ public class FactoryRecipeProvider extends RecipeProvider implements IConditionB
         concreteLight(recipeOutput, Items.MAGENTA_CONCRETE, LightBlocksGlasses.MAGENTA_LIGHT_BLOCK.get());
         concreteLight(recipeOutput, Items.PINK_CONCRETE, LightBlocksGlasses.PINK_LIGHT_BLOCK.get());
         glassLight(recipeOutput, Items.WHITE_STAINED_GLASS, LightBlocksGlasses.WHITE_GLASS_LIGHT_BLOCK.get());
+        glassLight(recipeOutput, Items.GLASS, LightBlocksGlasses.CLEAR_GLASS_LIGHT_BLOCK.get());
         glassLight(recipeOutput, Items.LIGHT_GRAY_STAINED_GLASS, LightBlocksGlasses.LIGHT_GRAY_GLASS_LIGHT_BLOCK.get());
         glassLight(recipeOutput, Items.GRAY_STAINED_GLASS, LightBlocksGlasses.GRAY_GLASS_LIGHT_BLOCK.get());
         glassLight(recipeOutput, Items.BLACK_STAINED_GLASS, LightBlocksGlasses.BLACK_GLASS_LIGHT_BLOCK.get());

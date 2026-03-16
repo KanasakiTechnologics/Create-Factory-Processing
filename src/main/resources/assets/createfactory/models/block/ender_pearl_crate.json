@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "createfactory:block/crate_bottom",
-    "side": "createfactory:block/crate_side",
-    "top": "createfactory:block/ender_pearl_crate_top"
-  }
-}

@@ -4,7 +4,7 @@
   "parent": "minecraft:block/cube_all",
   "render_type": "minecraft:translucent",
   "textures": {
-    "all": "createfactory:block/light_glass/lime_light_glass"
+    "all": "createfactory:block/lime_light_glass"
   },
   "connections": {
     "type": "is_same_block"
