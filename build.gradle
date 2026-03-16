@@ -95,13 +95,15 @@ repositories {
 
 dependencies {
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
-    implementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}")
+    implementation("net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}")
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 
-    implementation("maven.modrinth:create-enchantment-industry:2.2.5b")
-    implementation("curse.maven:create-dragons-plus-1216624:7231493")
+    implementation("maven.modrinth:create-enchantment-industry:2.3.0")
+    implementation("curse.maven:create-dragons-plus-1216624:7653475")
+
+    implementation "maven.modrinth:fusion-connected-textures:1.2.12-neoforge-mc1.21.1"
 
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
     runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")

@@ -1,0 +1,9 @@
+{
+  "parent": "block/liquid",
+  "textures": {
+    "particle": "createfactory:block/universal_molten_still",
+    "flow": "createfactory:block/universal_molten_flow",
+    "still": "createfactory:block/universal_molten_still"
+  }
+}
+

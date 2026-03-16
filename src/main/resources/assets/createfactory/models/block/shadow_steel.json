@@ -1,0 +1,9 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "createfactory:block/universal_fluid_still",
+    "flow": "createfactory:block/universal_fluid_flow",
+    "still": "createfactory:block/universal_fluid_still"
+  }
+}
+

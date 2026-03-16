@@ -1,0 +1,11 @@
+{
+  "variants": {},
+  "multipart": [
+    {
+      "apply": {
+        "model": "createfactory:block/glow_ink",
+        "uvlock": true
+      }
+    }
+  ]
+}

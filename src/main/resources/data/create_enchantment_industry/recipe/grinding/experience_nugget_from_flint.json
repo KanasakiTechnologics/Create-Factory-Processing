@@ -1,0 +1,15 @@
+{
+  "type": "create_enchantment_industry:grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:flint"
+    }
+  ],
+  "sound": "minecraft:book_page_turn",
+  "results": [
+    {
+      "amount": 3,
+      "id": "create_enchantment_industry:experience"
+    }
+  ]
+}
